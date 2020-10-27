@@ -7,7 +7,11 @@ The respelling:
 
 <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 
-<script src="/json.js"></script>
+<script src="./text-to-ipa.js"></script>
+<script src="./converter-form.js"></script>
+
+<script src="/respell.js"></script>
+
 
 <script>
   alert("js");
@@ -15,3 +19,4 @@ The respelling:
   $("#word-out").html("test <i> test</i>")
   });
 </script>
+
