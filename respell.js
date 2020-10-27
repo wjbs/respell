@@ -1,12 +1,10 @@
-$().ready(function() {alert("ready in respell.js");});
-
-$().ready(function() {TextToIPA.loadDict('./ipadict.txt');});
+().ready(function() {TextToIPA.loadDict('./ipadict.txt');});
 
 $().ready(function(){
+        TextToIPA.loadDict('./ipadict.txt');
         $.getJSON("./foenemes.json", function( data ) {
-        Window.phonemes = data[phonemes];
-        Window.phonemeDict = data[phonemeDict];
-        $("#out").html("test");
+                Window.phonemes = data[phonemes];
+                Window.phonemeDict = data[phonemeDict];
     });
 });
 
