@@ -42,7 +42,7 @@ function ipaRespell(ipa) {
     var phns = ipa.match(/\d+(?=})/g);
     phns = phns.map(phn => pickSpelling(phn));
     var respelling = phns.reduce((acc, curr) => acc + curr[0], "");
-    phns.forEach(phn => respelling = respelling + "\n" + phn[0] + " as in " + phn[1])
+    phns.forEach(phn => respelling = respelling + "<br>" + phn[0] + " as in " + phn[1])
     return respelling
 }
 
