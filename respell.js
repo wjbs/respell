@@ -14,14 +14,14 @@ function englishToIpa(english) {
     return TextToIPA.lookup(englishTextArray[i].toLowerCase().replace(/[^\w\s]|_/g, '').replace(/\s+/g, ' '));
 }
 
-funciton convertWord() {
+function convertWord() {
     alert("convertWord");
     var word = $("word-in").text();
     alert(word);
 }
 
 
-funciton convertIpa() {
+function convertIpa() {
     alert("convertIpa");
     var ipa = $("word-in").text();
     alert(ipa);
