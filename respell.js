@@ -23,7 +23,7 @@ function setRespell(respelling) {
 
 function pickSpelling(phn) {
     var spellings = Window.phonemeDict[Window.phonemes[phn]];
-    spellings = spellings.filter(s => s[0].search(".") === -1);
+    spellings = spellings.filter(s => s[0].indexOf(".") === -1);
     var spelling = spellings[Math.floor(Math.random() * spellings.length)];
     return spelling;
 }
