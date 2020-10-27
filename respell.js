@@ -7,7 +7,7 @@ $().ready(function(){
 });
 
 function englishToIpa(english) {
-    return TextToIPA.lookup(englishTextArray[i].toLowerCase().replace(/[^\w\s]|_/g, '').replace(/\s+/g, ' '));
+    return TextToIPA.lookup(english.toLowerCase().replace(/[^\w\s]|_/g, '').replace(/\s+/g, ' '));
 }
 
 function setRespell(respelling) {
