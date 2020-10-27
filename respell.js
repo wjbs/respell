@@ -1,5 +1,3 @@
-().ready(function() {TextToIPA.loadDict('./ipadict.txt');});
-
 $().ready(function(){
         TextToIPA.loadDict('./ipadict.txt');
         $.getJSON("./foenemes.json", function( data ) {
