@@ -72,7 +72,7 @@ function setHeader(xhr) {
 }
 
 function pron(word) {
-	var url = "http://en.wiktionary.org/w/api.php?action=query&prop=revisions&titles=" + word +"&rvslots=*&rvprop=content&formatversion=2&format=json"
+	var url = "https://en.wiktionary.org/w/api.php?action=query&prop=revisions&titles=" + word +"&rvslots=*&rvprop=content&formatversion=2&format=json"
 	
 	$.ajax({
 		url: url,
