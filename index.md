@@ -19,7 +19,7 @@ The respelling:
 <script src="./text-to-ipa.js"></script>
 <script src="./converter-form.js"></script>
 
-<script src="/respell.js"></script>
+<script src="./respell.js"></script>
 
 
 
