@@ -34,7 +34,7 @@ function ipaRespell(ipa) {
 
 function convertWord() {
     alert("convertWord");
-    var word = $("#word-in").text();
+    var word = $("#word-in").val();
     var respelling = ipaRespell(englishToIpa(word));
     setRespell(respelling);
 }
@@ -42,7 +42,7 @@ function convertWord() {
 
 function convertIpa() {
     alert("convertIpa");
-    var ipa = $("#ipa-in").text();
+    var ipa = $("#ipa-in").val();
     var respelling = ipaRespell(ipa);
     setRespell(respelling);
 }
