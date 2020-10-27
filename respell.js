@@ -43,7 +43,7 @@ function convertWord() {
     var word = $("#word-in").val();
     var ipa = englishToIpa(word)
     if (ipa !== null) {
-        var respelling = ipaRespell();
+        var respelling = ipaRespell(ipa);
         setRespell(respelling);
     }
 }
