@@ -34,7 +34,6 @@ function pickSpelling(phn) {
 
 function processIpa(ipa) {
     ipa = ipa.replace("a", "ɑ")
-             .replace("j", "j");
     return ipa;
 }
 
@@ -45,7 +44,7 @@ function ipaRespell(ipa) {
         ipa = ipa.replaceAll(p, "{"+ i.toString() + "}");
     }
     var phns = ipa.match(/\d+(?=})/g);
-    console.log("Missing ipa of <" + ipa + "> is <" + ipa.replace(/{\d+}/g, "");
+    console.log("Missing ipa of <" + ipa + "> is <" + ipa.replace(/{\d+}/g, ""));
     phns = phns.map(phn => pickSpelling(phn));
     var respelling = phns.reduce((acc, curr) => acc + curr[0], "");
     phns.forEach(phn => respelling = respelling + "<br>" + phn[0] + " as in " + phn[1])
