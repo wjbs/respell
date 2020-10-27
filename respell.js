@@ -53,6 +53,8 @@ function ipaRespell(ipa) {
 
 function convertWord() {
     var word = $("#word-in").val();
+	wikProcess(word);
+	return;
     var ipa = englishToIpa(word)
     if (ipa !== null) {
         var respelling = ipaRespell(ipa);
@@ -71,16 +73,27 @@ function setHeader(xhr) {
     xhr.setRequestHeader('Origin', "https://wjbs.github.com");
 }
 
-function pron(word) {
-	var url = "https://en.wiktionary.org/w/api.php?action=query&prop=revisions&titles=" + word +"&rvslots=*&rvprop=content&formatversion=2&format=json"
+function wikProcess(word) {
+	url = "https://en.wiktionary.org/w/api.php?action=query&prop=revisions&titles=" + word +"&rvslots=*&rvprop=content&formatversion=2&format=json"
 	
 	$.ajax({
 		url: url,
 		type: 'GET',
 		crossDomain: true,
 		dataType: 'jsonp',
-		success: function(data) { console.log(data) },
+		success: function(data) { parsePageToIpa(data.query.pages[0].revisions[0].slots.main.content); },
 		error: function() {},
 		beforeSend: setHeader
 	});
 }
+
+function parsePageToIpa(text) {
+	var str = text.match(/(?:IPA\|en\|\/).+(?:\/)/g)[0];
+	var idx = str.indexOf("/");
+	var ipa = str.substr(idx+1, str.length-idx-2)
+	if (ipa !== "") {
+        var respelling = ipaRespell(ipa);
+        setRespell(respelling);
+    }
+}
+
