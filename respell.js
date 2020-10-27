@@ -40,9 +40,9 @@ function ipaRespell(ipa) {
         ipa = ipa.replace(p, "{"+ i.toString() + "}");
     }
     var phns = ipa.match(/\d+(?=})/g);
-    phns.foreach(phn => pickSpelling(phn));
+    phns.forEach(phn => pickSpelling(phn));
     var respelling = phns.reduce((acc, curr) => acc + curr, "");
-    phns.foreach(phn => respelling = respelling + "\n" + phn[0] + " as in " + phn[1])
+    phns.forEach(phn => respelling = respelling + "\n" + phn[0] + " as in " + phn[1])
     return respelling
 }
 
