@@ -2,7 +2,7 @@
 Enter an english word:
 <input id="word-in">
 
-<button id="convert-word" onClick="convertWord">Convert</button>
+<button id="convert-word" onClick="convertWord()">Convert</button>
 
 
 Alternatively, directly enter IPA in unicode:
