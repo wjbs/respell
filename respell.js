@@ -11,6 +11,10 @@ function englishToIpa(english) {
     if (ipa.error === null) {
         return ipa.text;
     }
+    else if (ipa.error === "multi") {
+        var ipas = ipa.text.split(" OR ")
+        return ipas[Math.floor(Math.random() * ipas.length)];
+    }
     else {
         setRespell("Error getting IPA from word " + english + ": " + ipa.error.toString());
         return null;
