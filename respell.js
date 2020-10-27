@@ -36,7 +36,8 @@ function processIpa(ipa) {
 function ipaRespell(ipa) {
     ipa = processIpa(ipa)
     for (i = 0; i < Window.phonemes.length; i++) {
-        ipa = ipa.replace(Window.phonemes[i], "{"+ i.toString() + "}");
+        var p = Window.phonemes[i]
+        ipa = ipa.replace(p, "{"+ i.toString() + "}");
     }
     var phns = ipa.match(/\d+(?=})/g);
     phns.foreach(phn => pickSpelling(phn));
