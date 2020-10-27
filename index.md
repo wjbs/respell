@@ -2,13 +2,13 @@
 Enter an english word:
 <input id="word-in">
 
-<button id="convert-word">Convert</button>
+<button id="convert-word" onClick="convertWord">Convert</button>
 
 
 Alternatively, directly enter IPA in unicode:
 <input id="ipa-in">
 
-<button id="convert-ipa">Convert</button>
+<button id="convert-ipa" onClick="convertIpa()">Convert</button>
 
 
 The respelling:
