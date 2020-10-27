@@ -66,3 +66,21 @@ function convertIpa() {
     var respelling = ipaRespell(ipa);
     setRespell(respelling);
 }
+
+function setHeader(xhr) {
+    xhr.setRequestHeader('Origin', "https://wjbs.github.com");
+}
+
+function pron(word) {
+	var url = "http://en.wiktionary.org/w/api.php?action=query&prop=revisions&titles=" + word +"&rvslots=*&rvprop=content&formatversion=2&format=json"
+	
+	$.ajax({
+		url: url,
+		type: 'GET',
+		crossDomain: true,
+		dataType: 'jsonp',
+		success: function(data) { console.log(data) },
+		error: function() {},
+		beforeSend: setHeader
+	});
+}
