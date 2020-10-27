@@ -1,9 +1,18 @@
 ## Respell
-Enter an IPA spelling (using unicode characters - it's easiest to copy-paste from wikipedia!)
+Enter an english word:
 </input id="word-in">
 
+<button id="convert-word">Convert</button>
+
+
+Alternatively, directly enter IPA in unicode:
+</input id="ipa-in">
+
+<button id="convert-ipa">Convert</button>
+
+
 The respelling:
-<div id="word-out"></div>
+<div id="wout"></div>
 
 <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 
