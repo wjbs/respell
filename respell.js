@@ -40,7 +40,6 @@ function ipaRespell(ipa) {
 }
 
 function convertWord() {
-    alert("convertWord");
     var word = $("#word-in").val();
     var ipa = englishToIpa(word)
     if (ipa !== null) {
@@ -51,7 +50,6 @@ function convertWord() {
 
 
 function convertIpa() {
-    alert("convertIpa");
     var ipa = $("#ipa-in").val();
     var respelling = ipaRespell(ipa);
     setRespell(respelling);
