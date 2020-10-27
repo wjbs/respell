@@ -1,8 +1,8 @@
 $().ready(function(){
     TextToIPA.loadDict('./ipadict.txt');
     $.getJSON("./foenemes.json", function( data ) {
-        Window.phonemes = data[phonemes];
-        Window.phonemeDict = data[phonemeDict];
+        Window.phonemes = data["phonemes"];
+        Window.phonemeDict = data["phonemeDict"];
     });
 });
 
