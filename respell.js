@@ -28,7 +28,13 @@ function pickSpelling(phn) {
     return spelling;
 }
 
+function processIpa(ipa) {
+    ipa = ipa.replace("a", "ɑ")
+    return ipa
+}
+
 function ipaRespell(ipa) {
+    ipa = processIpa(ipa)
     for (i = 0; i < Window.phonemes.length; i++) {
         ipa = ipa.replace(Window.phonemes[i], "{i}");
     }
