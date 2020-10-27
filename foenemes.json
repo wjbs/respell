@@ -26,7 +26,7 @@
 			[" uy", " guyot"],
 			[" y", " city"]
 		],
-		"\\u026a": [
+		"ɪ": [
 			["i", "bit"],
 			[" y", " myth"],
 			[" a", " orange"],
@@ -70,7 +70,7 @@
 			[" w", " cwm"],
 			[" wo", " two"]
 		],
-		"\\u028a": [
+		"ʊ": [
 			["oo", "look"],
 			[" u", " full"],
 			[" o", " wolf"],
@@ -79,7 +79,7 @@
 			[" oul", " should"],
 			[" w", " cwtch"]
 		],
-		"e\\u026a": [
+		"eɪ": [
 			["a", "bass"],
 			[" a...e", " rate"],
 			[" aa", " quaalude"],
@@ -95,11 +95,11 @@
 			[" au", " gauge"],
 			[" ay", " hay"],
 			[" aye", " played"],
-			[" e (\\u00e9)", " ukulele (caf\\u00e9)"],
+			[" e (é)", " ukulele (café)"],
 			[" e...e", " crepe"],
 			[" ea", " steak"],
-			[" eg", " matinee (soir\\u00e9e)"],
-			[" ee (\\u00e9e)", " thegn"],
+			[" eg", " matinee (soirée)"],
+			[" ee (ée)", " thegn"],
 			[" eh", " eh"],
 			[" ei", " veil"],
 			[" ei...e", " beige"],
@@ -119,7 +119,7 @@
 			[" ue", " merengue"],
 			[" uet", " bouquet"]
 		],
-		"\\u0259": [
+		"ə": [
 			["a", "tuna"],
 			[" e", " oven"],
 			[" i", " pencil"],
@@ -157,7 +157,7 @@
 			[" ui", " circuit (GA)"],
 			[" uo", " languor"]
 		],
-		"\\u0259\\u028a": [
+		"əʊ": [
 			["o", "so"],
 			[" o...e", " bone"],
 			[" aoh", " pharaoh"],
@@ -180,7 +180,7 @@
 			[" owe", " owe"],
 			[" w", " pwn"]
 		],
-		"o\\u028a": [
+		"oʊ": [
 			["o", "so"],
 			[" o...e", " bone"],
 			[" aoh", " pharaoh"],
@@ -203,7 +203,7 @@
 			[" owe", " owe"],
 			[" w", " pwn"]
 		],
-		"\\u025b": [
+		"ɛ": [
 			["e", "met"],
 			[" a", " many"],
 			[" ae", " aesthetic"],
@@ -221,7 +221,7 @@
 			[" u", " bury"],
 			[" ue", " guess"]
 		],
-		"\\u00e6": [
+		"æ": [
 			["a", "hand"],
 			[" aa", " Aaron"],
 			[" ag", " seraglio (GA)"],
@@ -234,7 +234,7 @@
 			[" ei", " enceinte"],
 			[" i", " meringue"]
 		],
-		"\\u028c": [
+		"ʌ": [
 			["u", "sun"],
 			[" o", " son"],
 			[" o...e", " come"],
@@ -246,7 +246,7 @@
 			[" au (some dialects)", " (because)"],
 			[" ee (one pronunciation)", " (threepence)"]
 		],
-		"\\u0254": [
+		"ɔ": [
 			["or", "or"],
 			[" ore", " fore"],
 			[" aor", " extraordinary"],
@@ -263,7 +263,7 @@
 			[" owar", " poured"],
 			[" ure", " toward (GA)"]
 		],
-		"\\u0252": [
+		"ɒ": [
 			["a", "watch"],
 			[" o", " lock"],
 			[" ach", " yacht"],
@@ -273,7 +273,7 @@
 			[" ou", " john"],
 			[" ow", " cough"]
 		],
-		"\\u0251": [
+		"ɑ": [
 			["ar", "car"],
 			[" aar", " bazaar"],
 			[" alla", " topgallant-sail"],
@@ -286,7 +286,7 @@
 			[" uar", " guard"],
 			[" our (some dialects)", " (our)"]
 		],
-		"a\\u026a": [
+		"aɪ": [
 			["i...e", "fine"],
 			[" ae", " maestro"],
 			[" ai", " krait"],
@@ -316,7 +316,7 @@
 			[" y...e", " type"],
 			[" ye", " bye"]
 		],
-		"\\u0254\\u026a": [
+		"ɔɪ": [
 			["oi", "avoid"],
 			[" oy", " toy"],
 			[" awy", " lawyer"],
@@ -326,7 +326,7 @@
 			[" uoy", " buoyant"],
 			[" uoye", " buoyed (RP)"]
 		],
-		"a\\u028a": [
+		"aʊ": [
 			["ou", "out"],
 			[" ow", " now"],
 			[" ao", " cacao"],
@@ -338,7 +338,7 @@
 			[" owe", " vowed"],
 			[" (eo)", " (Macleod)"]
 		],
-		"\\u025b\\u0259": [
+		"ɛə": [
 			["are", "bare"],
 			[" aer", " aerial"],
 			[" air", " hair"],
@@ -360,7 +360,7 @@
 			[" ey're", " they're"],
 			[" eyr", " eyra"]
 		],
-		"\\u026a\\u0259": [
+		"ɪə": [
 			["ere", "here"],
 			[" aer", " chimaera"],
 			[" e're", " we're"],
@@ -379,7 +379,7 @@
 			[" ir", " souvenir"],
 			[" oea", " diarrhoea (RP)"]
 		],
-		"\\u025c": [
+		"ɜ": [
 			["er", "defer"],
 			[" ir", " fir"],
 			[" ur", " fur"],
@@ -453,7 +453,7 @@
 			[" pn", " pneumonia"],
 			[" sne", " mesne"]
 		],
-		"\\u014b": [
+		"ŋ": [
 			["ng", "sing"],
 			[" n", " link"],
 			[" nc", " charabanc"],
@@ -522,7 +522,7 @@
 			[" que", " mosque"],
 			[" x", " excitement"]
 		],
-		"\\u0261": [
+		"ɡ": [
 			["g", "gig"],
 			[" gg", " egg"],
 			[" ckg", " blackguard"],
@@ -567,7 +567,7 @@
 			[" ze", " breeze"],
 			[" c (in some dialects)", " (electricity)"]
 		],
-		"\\u0283": [
+		"ʃ": [
 			["sh", "shin"],
 			[" c", " speciality"],
 			[" ce", " ocean"],
@@ -588,7 +588,7 @@
 			[" ssi", " mission"],
 			[" ti", " nation"]
 		],
-		"\\u0292": [
+		"ʒ": [
 			["g", "genre"],
 			[" ge", " beige"],
 			[" j", " bijou"],
@@ -598,7 +598,7 @@
 			[" z", " seizure"],
 			[" zh", " zhoosh"],
 			[" zhe", " uzhe"],
-			[" zi", "\\u2020\\u2020\\u2020 brazier"]
+			[" zi", "††† brazier"]
 		],
 		"f": [
 			["f", "fine"],
@@ -623,14 +623,14 @@
 			[" ve", " have"],
 			[" w", " weltanschauung"]
 		],
-		"\\u03b8": [
+		"θ": [
 			["th", "thin"],
 			[" the", " absinthe"],
 			[" chth", " chthonic"],
 			[" phth", " phthisis"],
 			[" tth", " Matthew"]
 		],
-		"\\u00f0": [
+		"ð": [
 			["th", "them"],
 			[" the", " breathe"],
 			[" y", " ye (mock archaic)"]
@@ -640,7 +640,7 @@
 			[" i", " onion"],
 			[" j", " hallelujah"],
 			[" ll", " tortilla"],
-			[" r", " February \\u2020"]
+			[" r", " February †"]
 		],
 		"x": [
 			["ch (in Scottish English)", "loch"],
@@ -681,10 +681,10 @@
 			[" we", " awesome"],
 			[" wh (in most dialects)", " what"]
 		],
-		"\\u028d": [
+		"ʍ": [
 			["wh (in some dialects)", "which"]
 		],
-		"t\\u0283": [
+		"tʃ": [
 			["ch", "chop"],
 			[" tch", " batch"],
 			[" c", " cello"],
@@ -703,7 +703,7 @@
 			[" tz", " britz(s)ka (US)"],
 			[" tzs", " Nietzschean"]
 		],
-		"d\\u0292": [
+		"dʒ": [
 			["g", "magic"],
 			[" j", " jump"],
 			[" ch", " sandwich (RP)"],
@@ -716,7 +716,7 @@
 			[" gg", " veggies"],
 			[" gi", " Belgian"],
 			[" jj", " hajj"],
-			[" t", " congratulate (US)\\u2020\\u2020"]
+			[" t", " congratulate (US)††"]
 		],
 		"ks": [
 			["x", "sax"],
@@ -738,7 +738,7 @@
 			[" xsc", " exscind"],
 			[" xsw", " coxswain"]
 		],
-		"\\u01c0": [
+		"ǀ": [
 			["tsk", "tsk"],
 			[" tut", " tut"]
 		]
