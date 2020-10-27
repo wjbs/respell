@@ -6,6 +6,15 @@ $().ready(function(){
     $.getJSON( "/foenemes.json", function( data ) {
     Window.phonemes = data[phonemes];
     Window.phonemeDict = data[phonemeDict];
-    $("#text").html(data["text"]);
+    $("#out").html("test");
   });
 });
+
+funciton convertWord() {
+    alert("convertWord");
+}
+
+
+funciton convertIpa() {
+    alert("convertWord");
+}
