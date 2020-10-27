@@ -18,7 +18,7 @@ function englishToIpa(english) {
 }
 
 function setRespell(respelling) {
-    $("#out").text(respelling);
+    $("#out").html(respelling);
 }
 
 function pickSpelling(phn) {
