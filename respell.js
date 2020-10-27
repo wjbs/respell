@@ -7,7 +7,14 @@ $().ready(function(){
 });
 
 function englishToIpa(english) {
-    return TextToIPA.lookup(english.toLowerCase().replace(/[^\w\s]|_/g, '').replace(/\s+/g, ' '));
+    var ipa = TextToIPA.lookup(english.toLowerCase().replace(/[^\w\s]|_/g, '').replace(/\s+/g, ' '));
+    if (ipa.error === null) {
+        return ipa.text;
+    }
+    else {
+        setRespell("Error getting IPA from word " + english + ": " + ipa.error.toString());
+        return null;
+    }
 }
 
 function setRespell(respelling) {
@@ -35,8 +42,11 @@ function ipaRespell(ipa) {
 function convertWord() {
     alert("convertWord");
     var word = $("#word-in").val();
-    var respelling = ipaRespell(englishToIpa(word));
-    setRespell(respelling);
+    var ipa = englishToIpa(word)
+    if (ipa !== null) {
+        var respelling = ipaRespell();
+        setRespell(respelling);
+    }
 }
 
 
