@@ -1,9 +1,9 @@
 ## Respell
 Enter an IPA spelling (using unicode characters - it's easiest to copy-paste from wikipedia!)
-<input id="word-in"></input>
+</input id="word-in">
 
 The respelling:
-<b><p id="word-out"></p></b>
+<div id="word-out"></div>
 
 <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 
