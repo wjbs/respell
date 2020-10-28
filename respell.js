@@ -93,7 +93,8 @@ function parsePageToIpa(text) {
 	}
     catch {
         setRespell("Oops, something went wrong! Check for the correct capitalizaiton (lowecase for non-proper nouns), make sure the word is singular rather than plural, and of course check spelling!");
-    }
+    	return;
+	}
 	var idx = str.indexOf("/");
 	var ipa = str.substr(idx+1, str.length-idx-2)
 	if (ipa !== "") {
