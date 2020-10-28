@@ -88,7 +88,7 @@ function wikProcess(word) {
 }
 
 function parsePageToIpa(text) {
-	var str = text.match(/(?:IPA\|en\|\/).+(?:\/)/g)[0];
+	var str = text.match(/(?:IPA\|en\|\/).+?(?:\/)/g)[0];
 	var idx = str.indexOf("/");
 	var ipa = str.substr(idx+1, str.length-idx-2)
 	if (ipa !== "") {
