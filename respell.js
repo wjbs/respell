@@ -83,7 +83,14 @@ function wikProcess(word) {
 		type: 'GET',
 		crossDomain: true,
 		dataType: 'jsonp',
-		success: function(data) { parsePageToIpa(data.query.pages[0].revisions[0].slots.main.content); },
+		success: function(data) {
+			try {
+				parsePageToIpa(data.query.pages[0].revisions[0].slots.main.content);
+			}
+    		catch {
+        		setRespell("Oops, something went wrong! Check for the correct capitalizaiton (lowecase for non-proper nouns), make sure the word is singular rather than plural, and of course check spelling!");
+    			return;
+			}},
 		error: function() {},
 		beforeSend: setHeader
 	});
