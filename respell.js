@@ -33,8 +33,9 @@ function pickSpelling(phn) {
 }
 
 function processIpa(ipa) {
-    ipa = ipa.replace("a", "ɑ")
-		     .replace("ɹ", "r");
+    ipa = ipa.replaceAll("a", "ɑ")
+		     .replaceAll("ɹ", "r");
+			 .replaceAll(/o(?!ʊ)/g, "o")
     return ipa;
 }
 
